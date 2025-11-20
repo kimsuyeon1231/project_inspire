@@ -1,0 +1,444 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "SfHambakneun";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+body header {
+  background-color: aqua;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 96px;
+  border-bottom: 1px solid #B9B9B9;
+  margin-bottom: 5px;
+}
+body header nav .gnb {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+body header nav .gnb li a {
+  font-size: 0.938rem;
+  font-weight: 500;
+  line-height: 90px;
+}
+body header nav .gnb li .lnb {
+  position: absolute;
+}
+body header h1 a {
+  width: 150px;
+  height: 30px;
+}
+body header h1 a img {
+  width: 100%;
+}
+body header .actions {
+  display: flex;
+  gap: 20px;
+  width: 549.57px;
+  justify-content: end;
+}
+body header .actions .actions_text {
+  font-size: 0.813rem;
+}
+body header .actions > span {
+  color: #B9B9B9;
+}
+body header .actions .actions_icon1 {
+  width: 16px;
+}
+body header .actions .actions_icon2 {
+  width: 18px;
+  height: 17px;
+}
+body header .actions .actions_icon3 {
+  width: 24px;
+  height: 16px;
+}
+body header .actions img {
+  width: 100%;
+}
+
+main {
+  /* 공통 */
+}
+main section:not(:first-child) {
+  margin-bottom: 140px;
+}
+main h3 {
+  font-family: "SfHambakneun";
+  font-size: 1.563rem;
+  font-weight: 800;
+  text-align: center;
+}
+main .text_16 {
+  text-align: center;
+  line-height: 1.5;
+}
+main .more {
+  font-size: 0.938rem;
+  width: 199px;
+  line-height: 38px;
+  text-align: center;
+  display: inline-block;
+  color: #878787;
+  border: 1px solid #878787;
+}
+main #bnr {
+  position: relative;
+  margin-bottom: 5px;
+}
+main #bnr .bnr_content .bnr_containers .bnr_slide {
+  width: 640px;
+  position: relative;
+  z-index: 100;
+}
+main #bnr .bnr_content .bnr_containers .bnr_slide img {
+  width: 100%;
+}
+main #bnr .bnr_content .bnr_containers .bnr_slide .bnr_text_group {
+  position: absolute;
+  left: 95px;
+  bottom: 75px;
+  z-index: 200;
+  color: #fff;
+}
+main #bnr .bnr_content .bnr_containers .bnr_slide .bnr_text_group h2, main #bnr .bnr_content .bnr_containers .bnr_slide .bnr_text_group p {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+main #bnr .bnr_content .bnr_containers .bnr_slide .bnr_text_group h2 {
+  font-size: 2.188rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+main #bnr .bnr_content .bnr_containers .bnr_slide .bnr_text_group p {
+  font-size: 0.938rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  letter-spacing: 0.1em;
+}
+main #bnr .bnr_content .bnr_containers .bnr_slide .bnr_text_group .bnr_button {
+  font-size: 0.938rem;
+  color: #121212;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 7px 46.5px;
+}
+main #bnr .bnr_control > .swiper-button-prev, main #bnr .bnr_control .swiper-button-next {
+  top: 50%;
+  width: 40px;
+}
+main #bnr .bnr_control > .swiper-button-prev svg, main #bnr .bnr_control .swiper-button-next svg {
+  color: #fff;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.4));
+}
+main #bnr .bnr_control > .swiper-button-prev {
+  left: 96px;
+}
+main #bnr .bnr_control > .swiper-button-next {
+  right: 96px;
+}
+main #reservation {
+  padding: 0 141.5px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main #reservation .reservation_g {
+  height: 84px;
+  padding: 0 100px;
+  border-bottom: 1px solid #878787;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  /* 예약 공통 */
+}
+main #reservation .reservation_g .sortation {
+  text-align: center;
+  margin-bottom: 15px;
+}
+main #reservation .reservation_g img {
+  width: 100%;
+}
+main #reservation .reservation_g {
+  /*  */
+}
+main #reservation .reservation_g .check_in_out {
+  width: 124px;
+}
+main #reservation .reservation_g .check_in_out .calendar {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main #reservation .reservation_g .check_in_out .calendar .calendar_img {
+  width: 20px;
+  display: inline-block;
+}
+main #reservation .reservation_g .reservation_arrow {
+  width: 57.12px;
+  height: 9.43px;
+}
+main #reservation .reservation_g .dividing_line {
+  display: inline-block;
+  width: 1px;
+}
+main #reservation .reservation_g .guests_number {
+  width: 196px;
+}
+main #reservation .reservation_g .guests_number .count_control {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main #reservation .reservation_g .guests_number .count_control .adults, main #reservation .reservation_g .guests_number .count_control .children {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+main #reservation .reservation_g .guests_number .count_control .adults .counter, main #reservation .reservation_g .guests_number .count_control .children .counter {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+main #reservation .reservation_g .guests_number .count_control .adults .counter .adults_btn, main #reservation .reservation_g .guests_number .count_control .adults .counter .children_btn, main #reservation .reservation_g .guests_number .count_control .children .counter .adults_btn, main #reservation .reservation_g .guests_number .count_control .children .counter .children_btn {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: -18px;
+}
+main #reservation .reservation_g .guests_number .count_control .adults .counter .adults_btn .counter_btn, main #reservation .reservation_g .guests_number .count_control .adults .counter .children_btn .counter_btn, main #reservation .reservation_g .guests_number .count_control .children .counter .adults_btn .counter_btn, main #reservation .reservation_g .guests_number .count_control .children .counter .children_btn .counter_btn {
+  width: 7px;
+  height: 4px;
+  display: inline-block;
+}
+main #reservation .reservation_g .code input {
+  font-size: 0.938rem;
+  border-bottom: 1px solid #878787;
+  width: 154px;
+}
+main #reservation > button {
+  font-size: 0.938rem;
+  width: 160px;
+  line-height: 75px;
+  text-align: center;
+  color: #fff;
+  background-color: #414141;
+}
+main #special_offers h3, main #dining h3 {
+  margin-bottom: 20px;
+}
+main #special_offers > p, main #dining > p {
+  margin-bottom: 50px;
+}
+main #special_offers .offers_group, main #dining .offers_group {
+  margin-bottom: 50px;
+}
+main #special_offers .offers_group .card, main #dining .offers_group .card {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+main #special_offers .offers_group .card .card_inner, main #dining .offers_group .card .card_inner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 460px;
+  height: 520px;
+  position: relative;
+}
+main #special_offers .offers_group .card .card_inner .card_text, main #dining .offers_group .card .card_inner .card_text {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+main #special_offers .offers_group .card .card_inner .card_text h4, main #dining .offers_group .card .card_inner .card_text h4 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+main #special_offers .offers_group .card .card_inner .card_text .offers_info, main #dining .offers_group .card .card_inner .card_text .offers_info {
+  line-height: 1.5;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+main #special_offers .offers_group .card .card_inner .card_text .read_more, main #dining .offers_group .card .card_inner .card_text .read_more {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main #special_offers .offers_group .card .card_inner .card_text .read_more .read_more_text, main #dining .offers_group .card .card_inner .card_text .read_more .read_more_text {
+  font-size: 0.813rem;
+}
+main #special_offers .offers_group .card .offers_card1, main #dining .offers_group .card .offers_card1 {
+  background-image: url(../images/special1.jpg);
+}
+main #special_offers .offers_group .card .offers_card2, main #dining .offers_group .card .offers_card2 {
+  background-image: url(../images/special2.jpg);
+}
+main #special_offers .offers_group .card .offers_card3, main #dining .offers_group .card .offers_card3 {
+  background-image: url(../images/special3.jpg);
+}
+main #special_offers .offers_group .card .dining_card1, main #dining .offers_group .card .dining_card1 {
+  background-image: url(../images/dining1.jpg);
+}
+main #special_offers .offers_group .card .dining_card2, main #dining .offers_group .card .dining_card2 {
+  background-image: url(../images/dining2.jpg);
+}
+main #special_offers .offers_group .card .dining_card3, main #dining .offers_group .card .dining_card3 {
+  background-image: url(../images/dining3.jpg);
+}
+main #special_offers .offers_control, main #special_offers .dining_control, main #dining .offers_control, main #dining .dining_control {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main #special_offers .offers_control > .swiper-button-prev, main #special_offers .offers_control > .swiper-button-next, main #special_offers .dining_control > .swiper-button-prev, main #special_offers .dining_control > .swiper-button-next, main #dining .offers_control > .swiper-button-prev, main #dining .offers_control > .swiper-button-next, main #dining .dining_control > .swiper-button-prev, main #dining .dining_control > .swiper-button-next {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 57px;
+  height: 14px;
+  margin-top: -10px;
+}
+main #special_offers .offers_control > .swiper-button-prev svg, main #special_offers .offers_control .swiper-button-next svg, main #special_offers .dining_control > .swiper-button-prev svg, main #special_offers .dining_control .swiper-button-next svg, main #dining .offers_control > .swiper-button-prev svg, main #dining .offers_control .swiper-button-next svg, main #dining .dining_control > .swiper-button-prev svg, main #dining .dining_control .swiper-button-next svg {
+  display: none;
+}
+main #special_offers .offers_control > .swiper-button-prev, main #special_offers .dining_control > .swiper-button-prev, main #dining .offers_control > .swiper-button-prev, main #dining .dining_control > .swiper-button-prev {
+  left: 255px;
+  background-image: url(../images/prev_gray.png);
+}
+main #special_offers .offers_control > .swiper-button-next, main #special_offers .dining_control > .swiper-button-next, main #dining .offers_control > .swiper-button-next, main #dining .dining_control > .swiper-button-next {
+  right: 255px;
+  background-image: url(../images/next_gray.png);
+}
+main #membership {
+  background-color: #f8f8f8;
+  padding: 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+main #membership .inspire_membership {
+  text-align: center;
+}
+main #membership .inspire_membership > h3 {
+  margin-bottom: 25px;
+}
+main #membership .inspire_membership > p {
+  margin-bottom: 60px;
+}
+main #membership .inspire_membership > a {
+  padding: 10px 59px;
+  font-size: 0.938rem;
+  color: #878787;
+  border: 1px solid #878787;
+}
+main #entertainment {
+  text-align: center;
+}
+main #entertainment > h3 {
+  margin-bottom: 50px;
+}
+main #entertainment .enter_img_group {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+main #entertainment .enter_img_group .img_g1, main #entertainment .enter_img_group .img_g2, main #entertainment .enter_img_group .img_g3 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 공통 */
+}
+main #entertainment .enter_img_group .img_g1 a, main #entertainment .enter_img_group .img_g2 a, main #entertainment .enter_img_group .img_g3 a {
+  display: inline-block;
+  position: relative;
+}
+main #entertainment .enter_img_group .img_g1 em, main #entertainment .enter_img_group .img_g2 em, main #entertainment .enter_img_group .img_g3 em {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1.563rem;
+  font-weight: 600;
+}
+main #entertainment .enter_img_group .img_g1, main #entertainment .enter_img_group .img_g2, main #entertainment .enter_img_group .img_g3 {
+  /*  */
+}
+main #entertainment .enter_img_group .img_g1 .g1_1, main #entertainment .enter_img_group .img_g2 .g1_1, main #entertainment .enter_img_group .img_g3 .g1_1 {
+  background-image: url(../images/enter1_1.png);
+  width: 420px;
+  height: 300px;
+}
+main #entertainment .enter_img_group .img_g1 .g1_2, main #entertainment .enter_img_group .img_g2 .g1_2, main #entertainment .enter_img_group .img_g3 .g1_2 {
+  background-image: url(../images/enter2_1.png);
+  width: 420px;
+  height: 400px;
+}
+main #entertainment .enter_img_group .img_g1 .g2_1, main #entertainment .enter_img_group .img_g2 .g2_1, main #entertainment .enter_img_group .img_g3 .g2_1 {
+  background-image: url(../images/enter1_2.png);
+  width: 420px;
+  height: 400px;
+}
+main #entertainment .enter_img_group .img_g1 .g2_2, main #entertainment .enter_img_group .img_g2 .g2_2, main #entertainment .enter_img_group .img_g3 .g2_2 {
+  background-image: url(../images/enter2_2.png);
+  width: 420px;
+  height: 300px;
+}
+main #entertainment .enter_img_group .img_g1 .g3_1, main #entertainment .enter_img_group .img_g2 .g3_1, main #entertainment .enter_img_group .img_g3 .g3_1 {
+  background-image: url(../images/enter1_3.png);
+  width: 830px;
+  height: 350px;
+}
+main #entertainment .enter_img_group .img_g1 .img_g3_inner .g3_2, main #entertainment .enter_img_group .img_g2 .img_g3_inner .g3_2, main #entertainment .enter_img_group .img_g3 .img_g3_inner .g3_2 {
+  background-image: url(../images/enter2_3.png);
+  width: 410px;
+  height: 350px;
+}
+main #entertainment .enter_img_group .img_g1 .img_g3_inner .g3_3, main #entertainment .enter_img_group .img_g2 .img_g3_inner .g3_3, main #entertainment .enter_img_group .img_g3 .img_g3_inner .g3_3 {
+  background-image: url(../images/enter2_4.png);
+  width: 410px;
+  height: 350px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'SfHambakneun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+$font-size13:0.813rem;
+$font-size14:0.875rem;
+$font-size15:0.938rem;
+$font-size20:1.25rem;
+$font-size25:1.563rem;
+$font-size35:2.188rem;
+
+$font-width-regular:400;
+$font-width-mediun:500;
+$font-width-semibold:600;
+$font-width-bold:700;
+$font-width-extrabold:800;
+
+$letter-spacing-2: -2px;
+$letter-spacing10: 0.1em;
+$line-height150:1.5;
+
+$color-black :#121212;
+$color-white :#fff;
+$color-gray87 :#878787;
+$color-grayB9:#B9B9B9;
+$color-gray37 :#373737;
+$color-grayf8 :#f8f8f8;
+
+@mixin flex-row {
+    display: flex; flex-flow: row; justify-content: center; align-items: center;
+}
+@mixin flex-col {
+    display: flex; flex-flow: column; justify-content: center; align-items: center;
+}
+@mixin width100 {width: 100%;}
+@mixin background {background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+body {
+    header { background-color: aqua;
+        @include flex-row; justify-content: space-between; padding: 0 96px; border-bottom: 1px solid $color-grayB9; margin-bottom: 5px;
+        nav {
+            .gnb {
+                @include flex-row; gap:20px;
+                li {
+                    a {
+                        font-size: $font-size15; font-weight: $font-width-mediun; line-height: 90px;
+                    }
+                    .lnb {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+        h1{
+            a{width: 150px; height: 30px;
+                img{@include width100;}
+            }
+        }
+        .actions {display: flex; gap:20px; width: 549.57px; justify-content: end;
+            .actions_text {font-size: $font-size13;}
+            &>span {color:$color-grayB9;}
+            .actions_icon1 {width: 16px;}
+            .actions_icon2 {width: 18px; height: 17px;}
+            .actions_icon3 {width: 24px; height: 16px;}
+            img {@include width100;}
+        }
+    }
+}

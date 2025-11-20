@@ -6,11 +6,19 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인스파이어 엔터테인먼트 리조트</title>
-    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
-    <!-- cdn 연결 -->
-    <!-- 글꼴 연결 -->
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <!-- css,js 연결 -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./script/index.js" defer></script>
     
 </head>
 <body>
@@ -41,33 +49,400 @@
         </nav>
         <h1 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="메인페이지 바로가기"></a></h1>
         <div class="actions">
-            <a href="#">예약하기</a>
+            <a href="#" class="actions_text">예약하기</a>
             <span>|</span>
-            <a href="#"><img src="./images/search.png" alt="검색하기"></a>
-            <a href="#"><img src="./images/user.png" alt="마이페이지"></a>
-            <a href="#"><img src="./images/kr.png" alt="언어설정"></a>
+            <a href="#" class="actions_icon1"><img src="./images/search.png" alt="검색하기"></a>
+            <a href="#" class="actions_icon2"><img src="./images/user.png" alt="마이페이지"></a>
+            <a href="#" class="actions_icon3"><img src="./images/kr.png" alt="언어설정"></a>
         </div>
     </header>
     <main>
-        <section id="bnr"></section>
-        <section id="special_offers">
-            <h3>SPECIAL OFFERS</h3>
-            <p>끝없는 영감이 당신을 일깨우고, 반복되는 일상으로부터 자유로워지는 곳. <br>
-                인스파이어만의 특별한 프로모션과 함께 즐거운 여행을 계획해 보세요.</p>
-            <div class="special_offers_containers">
-                <a href="#">
-                    <h4>셰프스 키친 조식 패키지 (2부)</h4>
-                    <p class="offers_info">396,000원~ | 객실 1박 + 셰프스 키친 조식 2인 이용 +<br>
-                        인스파이어 웰니스 클럽 이용</p>
-                    <span>자세히보기<img src="" alt=""></span>
-                </a>
+        <section id="bnr">
+            <div class="swiper bnr_content">
+                <div class="swiper-wrapper bnr_containers">
+                    <div class="swiper-slide bnr_slide">
+                        <img src="./images/bnr1.jpg" alt="">
+                        <div class="bnr_text_group">
+                            <h2>르 스페이스 패키지</h2>
+                            <p class="bnr_info">예약가능기간 : ~ 2025. 12. 30  |  324,500원~</p>
+                            <a href="#" class="bnr_button">예약하기</a>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide bnr_slide">
+                        <img src="./images/bnr2.jpg" alt="">
+                        <div class="bnr_text_group">
+                            <h2>르 스페이스 패키지</h2>
+                            <p class="bnr_info">예약가능기간 : ~ 2025. 12. 30  |  324,500원~</p>
+                            <a href="#" class="bnr_button">예약하기</a>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide bnr_slide">
+                        <img src="./images/bnr3.jpg" alt="">
+                        <div class="bnr_text_group">
+                            <h2>르 스페이스 패키지</h2>
+                            <p class="bnr_info">예약가능기간 : ~ 2025. 12. 30  |  324,500원~</p>
+                            <a href="#" class="bnr_button">예약하기</a>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide bnr_slide">
+                        <img src="./images/bnr1.jpg" alt="">
+                        <div class="bnr_text_group">
+                            <h2>르 스페이스 패키지</h2>
+                            <p class="bnr_info">예약가능기간 : ~ 2025. 12. 30  |  324,500원~</p>
+                            <a href="#" class="bnr_button">예약하기</a>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide bnr_slide">
+                        <img src="./images/bnr2.jpg" alt="">
+                        <div class="bnr_text_group">
+                            <h2>르 스페이스 패키지</h2>
+                            <p class="bnr_info">예약가능기간 : ~ 2025. 12. 30  |  324,500원~</p>
+                            <a href="#" class="bnr_button">예약하기</a>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide bnr_slide">
+                        <img src="./images/bnr3.jpg" alt="">
+                        <div class="bnr_text_group">
+                            <h2>르 스페이스 패키지</h2>
+                            <p class="bnr_info">예약가능기간 : ~ 2025. 12. 30  |  324,500원~</p>
+                            <a href="#" class="bnr_button">예약하기</a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bnr_control">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
-        <section id="membership"></section>
-        <section id="tower_room"></section>
-        <section id="dining"></section>
-        <section id="entertainment"></section>
-        <section id="video"></section>
+        <section id="reservation">
+            <div class="reservation_g">
+                <div class="check_in_out">
+                    <p class="sortation">Check-out</p>
+                    <div class="calendar">
+                        <span class="calendar_img"><img src="./images/calendar.png" alt=""></span>
+                        <p class="date">yyyy-mm-dd</p>
+                    </div>
+                </div>
+                <span class="reservation_arrow">
+                    <img src="./images/next.png" alt="">
+                </span>
+                <div class="check_in_out">
+                    <p class="sortation">Check-out</p>
+                    <div class="calendar">
+                        <span class="calendar_img"><img src="./images/calendar.png" alt=""></span>
+                        <p class="date">yyyy-mm-dd</p>    
+                    </div>
+                </div>
+                <span class="dividing_line">
+                    <img src="./images/line.png" alt="">
+                </span>
+                <div class="guests_number">
+                    <p class="sortation">Number of Guests</p>
+                    <div class="count_control">
+                        <div class="adults">
+                            <span>Adults</span>
+                            <div class="counter">
+                                <button type="button" class="adults_number">0</button>
+                                <div class="adults_btn">
+                                    <button type="button" class="counter_btn"><img src="./images/count_up.png" alt="숫자증가" onclick="changeValue('adults_number', 1)"></button>
+                                    <button type="button" class="counter_btn"><img src="./images/count_down.png" alt="숫자다운" onclick="changeValue('adults_number', -1)"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="children">
+                            <span>Children</span>
+                            <div class="counter">
+                                <span class="children_number">0</span>
+                                <div class="children_btn">
+                                    <button type="button" class="counter_btn"><img src="./images/count_up.png" alt="숫자증가" onclick="changeValue('children_number', 1)"></span>
+                                    <button type="button" class="counter_btn"><img src="./images/count_down.png" alt="숫자다운" onclick="changeValue('children_number', -1)"></span>
+                                </div>    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <span class="dividing_line">
+                    <img src="./images/line.png" alt="">
+                </span>
+                <div class="code">
+                    <p class="sortation">Offer Code</p>
+                    <input type="text" placeholder="상품 코드를 입력해주세요.">
+                </div>
+            </div>
+            <button type="submit">예약조회</button>
+        </section>
+        <section id="special_offers">
+            <h3>SPECIAL OFFERS</h3>
+            <p class="text_16">끝없는 영감이 당신을 일깨우고, 반복되는 일상으로부터 자유로워지는 곳. <br>
+                인스파이어만의 특별한 프로모션과 함께 즐거운 여행을 계획해 보세요.</p>
+            <div class="swiper offers_group">
+                <div class="swiper-wrapper offers_containers">
+                    <div class="swiper-slide card">
+                        <a href="#" class="offers_card1 card_inner">
+                            <div class="card_text">
+                                <h4>셰프스 키친 조식 패키지 (2부)</h4>
+                                <p class="offers_info">396,000원~ | 객실 1박 + 셰프스 키친 조식 2인 이용 +<br>
+                                    인스파이어 웰니스 클럽 이용</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기</span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt=""></span>        
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="offers_card2 card_inner">
+                            <div class="card_text">
+                                <h4>셰프스 키친 조식 패키지 (2부)</h4>
+                                <p class="offers_info">396,000원~ | 객실 1박 + 셰프스 키친 조식 2인 이용 +<br>
+                                    인스파이어 웰니스 클럽 이용</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기
+                                    </span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt="">
+                                    </span>        
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="offers_card3 card_inner">
+                            <div class="card_text">
+                                <h4>셰프스 키친 조식 패키지 (2부)</h4>
+                                <p class="offers_info">396,000원~ | 객실 1박 + 셰프스 키친 조식 2인 이용 +<br>
+                                    인스파이어 웰니스 클럽 이용</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기</span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt=""></span>        
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide card">
+                        <a href="#" class="offers_card1 card_inner">
+                            <div class="card_text">
+                                <h4>셰프스 키친 조식 패키지 (2부)</h4>
+                                <p class="offers_info">396,000원~ | 객실 1박 + 셰프스 키친 조식 2인 이용 +<br>
+                                    인스파이어 웰니스 클럽 이용</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기</span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt=""></span>        
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="offers_card2 card_inner">
+                            <div class="card_text">
+                                <h4>셰프스 키친 조식 패키지 (2부)</h4>
+                                <p class="offers_info">396,000원~ | 객실 1박 + 셰프스 키친 조식 2인 이용 +<br>
+                                    인스파이어 웰니스 클럽 이용</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기
+                                    </span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt="">
+                                    </span>        
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="offers_card3 card_inner">
+                            <div class="card_text">
+                                <h4>셰프스 키친 조식 패키지 (2부)</h4>
+                                <p class="offers_info">396,000원~ | 객실 1박 + 셰프스 키친 조식 2인 이용 +<br>
+                                    인스파이어 웰니스 클럽 이용</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기</span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt=""></span>        
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="offers_control">
+                <div class="swiper-button-prev"></div>
+                <a href="#" class="more">MORE</a>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section id="membership">
+            <div class="inspire_membership">
+                <h3>INSPIRE Membership</h3>
+                <p class="text_16">인스파이어 멤버십에 지금 무료로 가입하시고, 인스파이어 엔터테인먼트<br>
+                    리조트의 다양한 혜택과 서비스를 한곳에서 누려보세요.</p>
+                    <a href="#" class="m_join">지금 가입하기</a>
+                </div>
+                <div class="membership_img"><img src="./images/membership.jpg" alt="멤버십 가입페이지 이동"></div>
+            </section>
+        <section id="tower_room">
+            <h3>TOWER & ROOM</h3>
+            <div class="tower_room_type">
+                <ul class="tower_list">
+                    <li class="tower_room_tltie">TOWER TYPE</li>
+                    <li class="tower_list active" data-tower="forest">
+                        <span class="arrow">▶</span>FOREST TOWER</li>
+                        <li class="tower_list" data-tower="OSEAN">
+                    <span class="arrow">▶</span>OSEAN TOWER</li>
+                <li class="tower_list" data-tower="SUN">
+                    <span class="arrow">▶</span>SUN TOWER</li>
+                    <li class="tower_list" data-tower="BUILDING">
+                        <span class="arrow">▶</span>BUILDING</li>
+                        <li class="tower_list" data-tower="MEET">
+                    <span class="arrow">▶</span>MEET</li>
+                </ul>
+            <div class="room">
+                <p class="tower_room_tltie">ROOM TYPE</p>
+                <div class="room_type" data-tower="forest">
+                    <div class="swiper room_list">
+                        <div class="swiper-wrapper forest_room">
+                            <div class="swiper-slide room_slide">
+                                <a href="#"><img src="./images/room.jpg" alt="룸 설명페이지 이동"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room_indicator">
+                        <div class="indicator_number" data-index="1">
+                            <span class="num">01</span>
+                            <span class="label">디럭스킹</span>
+                        </div>
+                    </div>
+                    <div class="room_indicator">
+                        <div class="indicator_number" data-index="2">
+                            <span class="num">02</span>
+                            <span class="label">디럭스킹</span>
+                        </div>
+                    </div>
+                    <div class="room_indicator">
+                        <div class="indicator_number" data-index="3">
+                            <span class="num">03</span>
+                            <span class="label">디럭스킹</span>
+                        </div>
+                    </div>
+                    <div class="room_indicator">
+                        <div class="indicator_number" data-index="4">
+                            <span class="num">04</span>
+                            <span class="label">디럭스킹</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="room_arrow">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section id="dining">
+            <h3>DINING</h3>
+            <p class="text_16">미식 여행의 출발선. 세계 각국의 다양하고 독창적인 요리가 여러분을 기다리고 있습니다.</p>
+            <div class="swiper offers_group">
+                <div class="swiper-wrapper offers_containers">
+                    <div class="swiper-slide card">
+                        <a href="#" class="dining_card1 card_inner">
+                            <div class="card_text">
+                                <h4>셰프스 키친</h4>
+                                <p class="offers_info">시그니처 다이닝 | 인터내셔널 뷔페</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기</span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt=""></span>        
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dining_card2 card_inner">
+                            <div class="card_text">
+                                <h4>하이파이 코리안 소울 푸드</h4>
+                                <p class="offers_info">캐주얼 다이닝 | 포차</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기
+                                    </span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt="">
+                                    </span>        
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dining_card3 card_inner">
+                            <div class="card_text">
+                                <h4>마이클 조던 스테이크 하우스</h4>
+                                <p class="offers_info">시그니처 다이닝  | 모던 스테이크 하우스</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기</span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt=""></span>        
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide card">
+                        <a href="#" class="dining_card1 card_inner">
+                            <div class="card_text">
+                                <h4>셰프스 키친</h4>
+                                <p class="offers_info">시그니처 다이닝 | 인터내셔널 뷔페</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기</span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt=""></span>        
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dining_card2 card_inner">
+                            <div class="card_text">
+                                <h4>하이파이 코리안 소울 푸드</h4>
+                                <p class="offers_info">캐주얼 다이닝 | 포차</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기
+                                    </span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt="">
+                                    </span>        
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dining_card3 card_inner">
+                            <div class="card_text">
+                                <h4>마이클 조던 스테이크 하우스</h4>
+                                <p class="offers_info">시그니처 다이닝  | 모던 스테이크 하우스</p>
+                                <div class="read_more">
+                                    <span class="read_more_text">자세히보기</span>
+                                    <spam class=more_arrow_img><img src="./images/small_arrow.png" alt=""></span>        
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="dining_control">
+                <div class="swiper-button-prev"></div>
+                <a href="#" class="more">MORE</a>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section id="entertainment">
+            <h3>ENTERTAINMENT</h3>
+            <!-- 이미지 모두 백그라운드 처리 -->
+            <div class="enter_img_group">
+                <div class="img_g1">
+                    <a href="#" class="g1_1"><em>ORORA</em></a>
+                    <a href="#" class="g1_2"><em>CASINO</em></a>
+                </div>
+                <div class="img_g2">
+                    <a href="#" class="g2_1"><em>ROTUNDA</em></a>
+                    <a href="#" class="g2_2"><em>WONDERS</em></a>
+                </div>
+                <div class="img_g3">
+                    <a href="#" class="g3_1"><em>ARENA</em></a>
+                    <div class="img_g3_inner">
+                        <a href="#" class="g3_2"><em>LE SPACE</em></a>
+                        <a href="#" class="g3_3"><em>SPLASH BAY</em></a>    
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="more">MORE</a>
+        </section>
+        <section id="video">
+            <video src="./images/video.mp4"
+            autoplay
+            loop
+            muted
+            ></video>
+            <p class="inspire_video">
+                엔터테인먼트 리조트의 새로운 기준,<br>
+                인스파이어 엔터테인먼트 리조트를 소개합니다.
+            </p>
+            <p class="inspire_resort">INSPIRERESORT</p>
+        </section>
     </main>
     <footer>
         <div class="first_line">
@@ -103,4 +478,4 @@
         <div class="third_line">COPYRIGHT&copy;2024 인스파이어 엔터테인먼트 리조트. 판권 소유.</div>
     </footer>
 </body>
-</html>
+</html> 
