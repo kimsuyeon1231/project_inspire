@@ -31,3 +31,13 @@ const diningSlide = new Swiper('#dining .swiper',{
         prevEl: '.dining_control .swiper-button-prev',
     },
     })
+
+/* 룸 */
+    const roomSlide = new Swiper('#tower_room .swiper',{
+        loop : true,
+        centeredSlides: false,
+        navigation: {
+            nextEl: '#tower_room .swiper-button-next',
+            prevEl: '#tower_room .swiper-button-prev',
+        },
+        })

@@ -4,6 +4,15 @@
     font-weight: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: "Beaufort for LOL Light";
+    src: url("https://db.onlinewebfonts.com/t/8ce947acc58a064a802b2e1839242ba6.eot");
+    src: url("https://db.onlinewebfonts.com/t/8ce947acc58a064a802b2e1839242ba6.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8ce947acc58a064a802b2e1839242ba6.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8ce947acc58a064a802b2e1839242ba6.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/8ce947acc58a064a802b2e1839242ba6.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8ce947acc58a064a802b2e1839242ba6.svg#Beaufort for LOL Light")format("svg");
+}
 
 $font-size13:0.813rem;
 $font-size14:0.875rem;
@@ -39,17 +48,39 @@ $color-grayf8 :#f8f8f8;
 @mixin background {background-position: center; background-repeat: no-repeat; background-size: cover;}
 
 body {
-    header { background-color: aqua;
+    header { background-color: $color-white; position: relative;
         @include flex-row; justify-content: space-between; padding: 0 96px; border-bottom: 1px solid $color-grayB9; margin-bottom: 5px;
         nav {
             .gnb {
                 @include flex-row; gap:20px;
                 li {
-                    a {
+                    .gnb_a {
                         font-size: $font-size15; font-weight: $font-width-mediun; line-height: 90px;
                     }
-                    .lnb {
-                        position: absolute;
+                    .lnb {display: none;
+                        position: absolute; z-index: 500; width: 100%; top: 90px; left: 0; padding: 30px 0; 
+                        background: rgba(255,255,255,0.8); backdrop-filter: blur(10px);  border: 1px solid rgba(255, 255, 255, 0.3);-webkit-backdrop-filter: blur(10px);
+                        li:not(:last-child) {margin-bottom: 30px;}
+                        li {
+                            a {color: #606060;}
+                        }
+                    }
+                    .lnb1 {
+                        li {margin-left: 5%;}
+                    }
+                    .lnb2 {
+                        li {margin-left: 11.7%;}
+                    }
+                }
+                .gnb_li {
+                    &:hover {
+                        text-decoration: underline; text-underline-offset:10px;
+                        .lnb {
+                            display: block;
+                            li:hover {
+                                a {color: $color-black; font-weight: $font-width-mediun;}
+                            }
+                        }
                     }
                 }
             }
@@ -67,5 +98,24 @@ body {
             .actions_icon3 {width: 24px; height: 16px;}
             img {@include width100;}
         }
+    }
+    footer {padding: 0 96px;
+        .first_line {
+            @include flex-row; justify-content: space-between; padding-top: 30px; padding-bottom: 30px;
+            border-bottom: 1px solid $color-gray87; margin-bottom: 20px;
+            .logo {width: 150px; height: 30px; img {width: 100%;}}
+            .sns_icon {@include flex-row; gap: 20px;
+                &>a {
+                    width: 30px; display: inline-block; img{width: 100%;}
+                }
+            }
+        }
+        .fnb {
+            padding-bottom: 40px; border-bottom: 1px solid $color-gray87; margin-bottom: 20px;
+            @include flex-row; justify-content: start; align-items: start; gap: 150px;
+            li {font-size: $font-size13; padding-bottom: 10px;}
+            .fnb_title {font-size: $font-size15; font-weight: $font-width-mediun;}
+        }
+        .third_line {font-size: $font-size13; margin-bottom: 70px;}
     }
 }

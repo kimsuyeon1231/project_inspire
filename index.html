@@ -25,16 +25,16 @@
     <header>
         <nav>
             <ul class="gnb">
-                <li><a href="#">OFFERS</a>
-                    <ul class="lnb">
+                <li class="gnb_li"><a href="#" class="gnb_a">OFFERS</a>
+                    <ul class="lnb lnb1">
                         <li><a href="#">프로모션</a></li>
                         <li><a href="#">객실</a></li>
                         <li><a href="#">이벤트</a></li>
                 </ul>
                 </li>
-                <li><a href="#">STAY</a></li>
-                <li><a href="#">FOOD&MALL</a>
-                    <ul class="lnb">
+                <li class="gnb_li"><a href="#" class="gnb_a">STAY</a></li>
+                <li class="gnb_li"><a href="#" class="gnb_a">FOOD&MALL</a>
+                    <ul class="lnb lnb2">
                         <li><a href="#">시그니처 다이닝</a></li>
                         <li><a href="#">캐주얼 다이닝</a></li>
                         <li><a href="#">바 & 카페</a></li>
@@ -42,9 +42,9 @@
                         <li><a href="#">MALL</a></li>
                     </ul>
                 </li>
-                <li><a href="#">ENTERTAINMENT</a></li>
-                <li><a href="#">MEMBERSHRIP</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li class="gnb_li"><a href="#" class="gnb_a">ENTERTAINMENT</a></li>
+                <li class="gnb_li"><a href="#" class="gnb_a">MEMBERSHRIP</a></li>
+                <li class="gnb_li"><a href="#" class="gnb_a">ABOUT</a></li>
             </ul>
         </nav>
         <h1 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="메인페이지 바로가기"></a></h1>
@@ -274,58 +274,113 @@
             <h3>TOWER & ROOM</h3>
             <div class="tower_room_type">
                 <ul class="tower_list">
-                    <li class="tower_room_tltie">TOWER TYPE</li>
-                    <li class="tower_list active" data-tower="forest">
+                    <li class="tower_room_title">TOWER TYPE</li>
+                    <li class="tower_name active" data-tower="forest">
                         <span class="arrow">▶</span>FOREST TOWER</li>
-                        <li class="tower_list" data-tower="OSEAN">
-                    <span class="arrow">▶</span>OSEAN TOWER</li>
-                <li class="tower_list" data-tower="SUN">
-                    <span class="arrow">▶</span>SUN TOWER</li>
-                    <li class="tower_list" data-tower="BUILDING">
+                    <li class="tower_name" data-tower="OSEAN">
+                        <span class="arrow">▶</span>OSEAN TOWER</li>
+                    <li class="tower_name" data-tower="SUN">
+                        <span class="arrow">▶</span>SUN TOWER</li>
+                    <li class="tower_name" data-tower="BUILDING">
                         <span class="arrow">▶</span>BUILDING</li>
-                        <li class="tower_list" data-tower="MEET">
-                    <span class="arrow">▶</span>MEET</li>
+                    <li class="tower_name" data-tower="MEET">
+                        <span class="arrow">▶</span>MEET</li>
                 </ul>
-            <div class="room">
-                <p class="tower_room_tltie">ROOM TYPE</p>
-                <div class="room_type" data-tower="forest">
-                    <div class="swiper room_list">
-                        <div class="swiper-wrapper forest_room">
-                            <div class="swiper-slide room_slide">
-                                <a href="#"><img src="./images/room.jpg" alt="룸 설명페이지 이동"></a>
+                <div class="room">
+                    <p class="tower_room_title">ROOM TYPE</p>
+                    <div class="room_type" data-tower="forest">
+                        <div class="swiper room_list">
+                            <div class="swiper-wrapper forest_room">
+                                <div class="swiper-slide room_slide">
+                                    <a href="#"><img src="./images/room.jpg" alt="룸 설명페이지 이동"></a>
+                                </div>
+                                <div class="swiper-slide room_slide">
+                                    <a href="#"><img src="./images/room.jpg" alt="룸 설명페이지 이동"></a>
+                                </div>
+                                <div class="swiper-slide room_slide">
+                                    <a href="#"><img src="./images/room.jpg" alt="룸 설명페이지 이동"></a>
+                                </div>
+                                <div class="swiper-slide room_slide">
+                                    <a href="#"><img src="./images/room.jpg" alt="룸 설명페이지 이동"></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="room_indicator">
-                        <div class="indicator_number" data-index="1">
-                            <span class="num">01</span>
-                            <span class="label">디럭스킹</span>
+                        <div class="room_type">
+                            <div class="room_indicator">
+                                <div class="indicator_number active" data-index="1">
+                                    <span class="num">01</span>
+                                    <span class="label">디럭스킹</span>
+                                </div>
+                            </div>
+                            <div class="room_indicator">
+                                <div class="indicator_number" data-index="2">
+                                    <span class="num">02</span>
+                                    <span class="label">디럭스킹</span>
+                                </div>
+                            </div>
+                            <div class="room_indicator">
+                                <div class="indicator_number" data-index="3">
+                                    <span class="num">03</span>
+                                    <span class="label">디럭스킹</span>
+                                </div>
+                            </div>
+                            <div class="room_indicator">
+                                <div class="indicator_number" data-index="4">
+                                    <span class="num">04</span>
+                                    <span class="label">디럭스킹</span>
+                                </div>
+                            </div>    
                         </div>
-                    </div>
-                    <div class="room_indicator">
-                        <div class="indicator_number" data-index="2">
-                            <span class="num">02</span>
-                            <span class="label">디럭스킹</span>
+                    </div><!-- forest -->
+                    <div class="room_type" data-tower="osean">
+                        <div class="swiper room_list">
+                            <div class="swiper-wrapper forest_room">
+                                <div class="swiper-slide room_slide">
+                                    <a href="#"><img src="./images/room.jpg" alt="룸 설명페이지 이동"></a>
+                                </div>
+                                <div class="swiper-slide room_slide">
+                                    <a href="#"><img src="./images/room.jpg" alt="룸 설명페이지 이동"></a>
+                                </div>
+                                <div class="swiper-slide room_slide">
+                                    <a href="#"><img src="./images/room.jpg" alt="룸 설명페이지 이동"></a>
+                                </div>
+                                <div class="swiper-slide room_slide">
+                                    <a href="#"><img src="./images/room.jpg" alt="룸 설명페이지 이동"></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="room_indicator">
-                        <div class="indicator_number" data-index="3">
-                            <span class="num">03</span>
-                            <span class="label">디럭스킹</span>
+                        <div class="room_type">
+                            <div class="room_indicator">
+                                <div class="indicator_number active" data-index="1">
+                                    <span class="num">01</span>
+                                    <span class="label">디럭스킹</span>
+                                </div>
+                            </div>
+                            <div class="room_indicator">
+                                <div class="indicator_number" data-index="2">
+                                    <span class="num">02</span>
+                                    <span class="label">디럭스킹</span>
+                                </div>
+                            </div>
+                            <div class="room_indicator">
+                                <div class="indicator_number" data-index="3">
+                                    <span class="num">03</span>
+                                    <span class="label">디럭스킹</span>
+                                </div>
+                            </div>
+                            <div class="room_indicator">
+                                <div class="indicator_number" data-index="4">
+                                    <span class="num">04</span>
+                                    <span class="label">디럭스킹</span>
+                                </div>
+                            </div>    
                         </div>
-                    </div>
-                    <div class="room_indicator">
-                        <div class="indicator_number" data-index="4">
-                            <span class="num">04</span>
-                            <span class="label">디럭스킹</span>
-                        </div>
-                    </div>
-                    </div>
+                    </div><!-- forest -->
                     <div class="room_arrow">
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
-                    </div>    
-                </div>
+                    </div>
+                </div><!-- room -->
             </div>
         </section>
         <section id="dining">
@@ -437,11 +492,13 @@
             loop
             muted
             ></video>
-            <p class="inspire_video">
-                엔터테인먼트 리조트의 새로운 기준,<br>
-                인스파이어 엔터테인먼트 리조트를 소개합니다.
-            </p>
-            <p class="inspire_resort">INSPIRERESORT</p>
+            <div class="video_text">
+                <p class="inspire_video">
+                    엔터테인먼트 리조트의 새로운 기준,<br>
+                    인스파이어 엔터테인먼트 리조트를 소개합니다.
+                </p>
+                <p class="inspire_resort">INSPIRERESORT</p>    
+            </div>
         </section>
     </main>
     <footer>
@@ -463,13 +520,13 @@
                 <li>사업자등록번호 : 496-86-00049</li>
                 <li>통신판매신고번호 : 2023-인천중구-0804</li>
             </ul>
-            <ul class="fnb">
+            <ul class="cs">
                 <li class="fnb_title">호텔예약 / 고객센터</li>
                 <li>TEL : 032-580-9000</li>
                 <li>FAX : 032-580-9009</li>
                 <li>Email : contact@inspireresorts.com</li>
             </ul>
-            <ul class="fnb">
+            <ul class="footer_link">
                 <li class="fnb_title"><a href="#">호텔 이용 약관</a></li>
                 <li class="fnb_title"><a href="#">개인정보 처리방침</a></li>
                 <li class="fnb_title"><a href="#">채용 안내</a></li>
