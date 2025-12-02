@@ -22,7 +22,7 @@ $font-size25:1.563rem;
 $font-size35:2.188rem;
 
 $font-width-regular:400;
-$font-width-mediun:500;
+$font-width-medium:500;
 $font-width-semibold:600;
 $font-width-bold:700;
 $font-width-extrabold:800;
@@ -55,7 +55,7 @@ body {
                 @include flex-row; gap:20px;
                 li {
                     .gnb_a {
-                        font-size: $font-size15; font-weight: $font-width-mediun; line-height: 90px;
+                        font-size: $font-size15; font-weight: $font-width-medium; line-height: 90px;
                     }
                     .lnb {display: none;
                         position: absolute; z-index: 500; width: 100%; top: 90px; left: 0; padding: 30px 0; 
@@ -78,7 +78,7 @@ body {
                         .lnb {
                             display: block;
                             li:hover {
-                                a {color: $color-black; font-weight: $font-width-mediun;}
+                                a {color: $color-black; font-weight: $font-width-medium;}
                             }
                         }
                     }
@@ -114,7 +114,7 @@ body {
             padding-bottom: 40px; border-bottom: 1px solid $color-gray87; margin-bottom: 20px;
             @include flex-row; justify-content: start; align-items: start; gap: 150px;
             li {font-size: $font-size13; padding-bottom: 10px;}
-            .fnb_title {font-size: $font-size15; font-weight: $font-width-mediun;}
+            .fnb_title {font-size: $font-size15; font-weight: $font-width-medium;}
         }
         .third_line {font-size: $font-size13; margin-bottom: 70px;}
     }
