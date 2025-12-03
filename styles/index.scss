@@ -124,31 +124,46 @@ main {
                 .tower_img.active {display: inline;}
                 .tower_option {
                     position: absolute; z-index: 105; top: 189px; left: 50%;transform: translate(-50%, 0); color: $color-grayB9;
-                    li {
-                        margin: 20px 0;
-                        span {opacity: 0; margin-right: 8px;}
-                    }
-                    li.active {
-                        color: $color-white;
-                        span {opacity: 1;}
+                    .tower_list {@include flex-col; align-items: start; gap: 20px;
+                        button {color: $color-gray87;
+                            span {opacity: 0; margin-right: 8px;}
+                        }
+                        button.active {
+                            color: $color-white;
+                            span {opacity: 1;}
+                        }    
                     }
                 }
             }
-            .room_list_group {
+            .room_list_group {position: relative;
                 background-color: $color-grayf8; height: 627px; width: 100%;
                 .type_title {margin: 45px auto 30px;}
                 .room_container {
                     display: none; margin: 0 auto;
+                    .swiper {
+                        margin-bottom: 30px;
+                        a {
+                            width: 986px; height: 398px; display: inline-block; overflow: hidden;
+                            img {width: 100%;}
+                        }
+                    }
                     .room_label {
                         @include flex-row; gap: 5px;
                         .label_num {
-                            font-size: $font-size14; font-weight: $font-width-medium;
+                            font-size: $font-size14;  color: $color-grayB9;
                             @include flex-col; gap: 10px; align-items: start; width: 100%;
-                            .num {border-bottom: 1.5px solid $color-grayB9; width: 100%; padding-bottom: 10px;}
-                        }    
+                            .num {border-bottom: 1.5px solid $color-grayB9; width: 100%; padding-bottom: 10px; font-weight: $font-width-medium;}
+                            .label {font-weight: $font-width-medium;}
+                        }
+                        .label_num.active {color: $color-black; .num{ border-bottom:1.5px solid $color-black;}}
                     }
                 }
                 .room_container.active {display: block; width: 986px;}
+            }
+            .room_control {
+                .swiper-button-prev,.swiper-button-next {width: 24px; height: 24px;}
+                .swiper-button-prev svg,.swiper-button-next svg {color: $color-black;}
+                .swiper-button-prev {left: 24px;} .swiper-button-next {right: 24px;}
             }
         }
     }
@@ -171,7 +186,7 @@ main {
                 .g2_1 {background-image: url(../images/enter1_2.png); width: 420px; height: 400px;}
                 .g2_2 {background-image: url(../images/enter2_2.png); width: 420px; height: 300px;}
                 .g3_1 {background-image: url(../images/enter1_3.png); width: 830px; height: 350px;}
-                .img_g3_inner {
+                .img_g3_inner {@include flex-row; gap: 10px;
                     .g3_2 {background-image: url(../images/enter2_3.png); width: 410px; height: 350px;}
                     .g3_3 {background-image: url(../images/enter2_4.png); width: 410px; height: 350px;}    
                 }

@@ -504,20 +504,29 @@ main #tower_room .tower_room_flex .tower_list_group .tower_option {
   transform: translate(-50%, 0);
   color: #B9B9B9;
 }
-main #tower_room .tower_room_flex .tower_list_group .tower_option li {
-  margin: 20px 0;
+main #tower_room .tower_room_flex .tower_list_group .tower_option .tower_list {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  gap: 20px;
 }
-main #tower_room .tower_room_flex .tower_list_group .tower_option li span {
+main #tower_room .tower_room_flex .tower_list_group .tower_option .tower_list button {
+  color: #878787;
+}
+main #tower_room .tower_room_flex .tower_list_group .tower_option .tower_list button span {
   opacity: 0;
   margin-right: 8px;
 }
-main #tower_room .tower_room_flex .tower_list_group .tower_option li.active {
+main #tower_room .tower_room_flex .tower_list_group .tower_option .tower_list button.active {
   color: #fff;
 }
-main #tower_room .tower_room_flex .tower_list_group .tower_option li.active span {
+main #tower_room .tower_room_flex .tower_list_group .tower_option .tower_list button.active span {
   opacity: 1;
 }
 main #tower_room .tower_room_flex .room_list_group {
+  position: relative;
   background-color: #f8f8f8;
   height: 627px;
   width: 100%;
@@ -529,6 +538,18 @@ main #tower_room .tower_room_flex .room_list_group .room_container {
   display: none;
   margin: 0 auto;
 }
+main #tower_room .tower_room_flex .room_list_group .room_container .swiper {
+  margin-bottom: 30px;
+}
+main #tower_room .tower_room_flex .room_list_group .room_container .swiper a {
+  width: 986px;
+  height: 398px;
+  display: inline-block;
+  overflow: hidden;
+}
+main #tower_room .tower_room_flex .room_list_group .room_container .swiper a img {
+  width: 100%;
+}
 main #tower_room .tower_room_flex .room_list_group .room_container .room_label {
   display: flex;
   flex-flow: row;
@@ -538,7 +559,7 @@ main #tower_room .tower_room_flex .room_list_group .room_container .room_label {
 }
 main #tower_room .tower_room_flex .room_list_group .room_container .room_label .label_num {
   font-size: 0.875rem;
-  font-weight: 500;
+  color: #B9B9B9;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -551,10 +572,33 @@ main #tower_room .tower_room_flex .room_list_group .room_container .room_label .
   border-bottom: 1.5px solid #B9B9B9;
   width: 100%;
   padding-bottom: 10px;
+  font-weight: 500;
+}
+main #tower_room .tower_room_flex .room_list_group .room_container .room_label .label_num .label {
+  font-weight: 500;
+}
+main #tower_room .tower_room_flex .room_list_group .room_container .room_label .label_num.active {
+  color: #121212;
+}
+main #tower_room .tower_room_flex .room_list_group .room_container .room_label .label_num.active .num {
+  border-bottom: 1.5px solid #121212;
 }
 main #tower_room .tower_room_flex .room_list_group .room_container.active {
   display: block;
   width: 986px;
+}
+main #tower_room .tower_room_flex .room_control .swiper-button-prev, main #tower_room .tower_room_flex .room_control .swiper-button-next {
+  width: 24px;
+  height: 24px;
+}
+main #tower_room .tower_room_flex .room_control .swiper-button-prev svg, main #tower_room .tower_room_flex .room_control .swiper-button-next svg {
+  color: #121212;
+}
+main #tower_room .tower_room_flex .room_control .swiper-button-prev {
+  left: 24px;
+}
+main #tower_room .tower_room_flex .room_control .swiper-button-next {
+  right: 24px;
 }
 main #entertainment {
   text-align: center;
@@ -622,6 +666,13 @@ main #entertainment .enter_img_group .img_g1 .g3_1, main #entertainment .enter_i
   background-image: url(../images/enter1_3.png);
   width: 830px;
   height: 350px;
+}
+main #entertainment .enter_img_group .img_g1 .img_g3_inner, main #entertainment .enter_img_group .img_g2 .img_g3_inner, main #entertainment .enter_img_group .img_g3 .img_g3_inner {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 main #entertainment .enter_img_group .img_g1 .img_g3_inner .g3_2, main #entertainment .enter_img_group .img_g2 .img_g3_inner .g3_2, main #entertainment .enter_img_group .img_g3 .img_g3_inner .g3_2 {
   background-image: url(../images/enter2_3.png);
